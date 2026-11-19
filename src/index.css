@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --pf-bg: #F7F6F2;
+  --pf-surface: #FFFFFF;
+  --pf-surface-alt: #F1EFE8;
+  --pf-primary: #245C45;
+  --pf-primary-hover: #1D4A38;
+  --pf-secondary: #75977F;
+  --pf-accent: #D9B98C;
+  --pf-text: #242A26;
+  --pf-muted: #89918B;
+  --pf-border: #E8E7E0;
+}
+
+.dark {
+  --pf-bg: #151A18;
+  --pf-surface: #1F2723;
+  --pf-surface-alt: #26302B;
+  --pf-primary: #83B89A;
+  --pf-primary-hover: #96C7AC;
+  --pf-secondary: #A6C5AF;
+  --pf-accent: #D9B98C;
+  --pf-text: #F3F5F1;
+  --pf-muted: #9AA69E;
+  --pf-border: #343D37;
+}
+
+@layer base {
+  html {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--pf-bg);
+    color: var(--pf-text);
+  }
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

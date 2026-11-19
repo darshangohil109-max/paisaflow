@@ -1,0 +1,8 @@
+{
+  "name": "PaisaFlow",
+  "description": "Understand Your Money. Control Your Future. Complete personal finance management application with INR tracking, budgets, savings goals, analytics, reports, and AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
